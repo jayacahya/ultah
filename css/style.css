@@ -65,6 +65,13 @@ body{
 .greetings{
     font-size: 5rem;
     font-weight: 900;
+    white-space: nowrap; /* ⬅️ penting: cegah turun ke bawah */
+    font-size: clamp(2.5rem, 8vw, 5rem); 
+}
+@media (max-width: 360px) {
+  .greetings {
+    letter-spacing: -1px; /* rapetin huruf */
+  }
 }
 .greetings > span{
     animation: glow 2.5s ease-in-out infinite;
